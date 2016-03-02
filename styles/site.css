@@ -1,3 +1,6 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,100);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
+
 html, body {
 	box-sizing: border-box;
 }
@@ -6,35 +9,168 @@ img, video, object {
 	max-width: 100%;
 }
 
-html, body,
+html, body, ul, ol
 h1, h2, h3, h4, h5, h6 {
 	margin: 0;
 	padding: 0;
 }
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Raleway", sans-serif;
+}
+
+body {
+	width: 90%;
+	margin: 20px auto;
+	line-height: 2.0em;
+}
+
+
+/* Helper classes */
+.text-center { text-align: center; }
+
+
+/* hyperlinks */
+
+li a, li a:link, li a:visited, li a:hover, li a:active {
+	color: #000;
+	text-decoration: none;
+}
+
+.container {
+}
 
 /* -------------------------------------------------------------------------------------
  * Header and Navigation
- * ------------------------------------------------------------------------------------*/
+ * -----------------------------------------------------------------------------------*/
 header {
-	
+	padding-bottom: 50px;
+	border-bottom: double #ccc;
+}
+
+nav {
+	height: 40px;
 }
 
 nav ul {
 	list-style: none;
+	float: right;
+	margin-top: 25px;
+	font-size: 1.2em;
 }
 
 nav ul li {
 	display: inline-block;
+	padding: 10px 20px;
+}
+
+nav ul li:hover {
+	border-bottom: 1px solid red;
+}
+
+#brand {
+	float: left;
+	margin-left: 80px;
+}
+
+.flag {
+	position: absolute;
+	top: 35px;
+	left: 150px;
+	z-index: -1;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: red;
+
 }
 
 /* -------------------------------------------------------------------------------------
  * Main Content
  * ------------------------------------------------------------------------------------*/
+.main {
+	clear: both;
+	padding: 2%;
+	font-weight: 300;
+	font-size: 1.2em;
+	font-family: "Lato", sans-serif;
+}
+
+/* about */
+.about img {
+	height: 331px;
+	width: 250px;
+	float: left;
+	padding: 5px;
+}
+
+/* end about */
+
+/* culture */
+
+.culture {
+	clear: both;
+}
+
+.geisha {
+}
+.geisha img{
+	float: right;	
+}
+
+.anime {
+	clear: both;
+}
+
+.movie-gallery {
+	clear:both; 	
+	text-align: center;
+}
+
+.movie-gallery img {
+	width: 350px;	
+	height: 225px;
+	padding: 10px;
+}
+
+
+.movie-titles {
+	font-weight: bold;
+	font-style: italic;
+}
+/* end culture */
+
+/* Food */
+
+.food {
+	clear: both;
+}
+.food img {
+	width: 350px;
+	height: 225px;
+	padding: 15px;
+}
+
+.food-gallery {
+	text-align: center;
+}
+
+.food-gallery > div {
+	display: inline-block;
+}
+
+/* End food */
 
 /* -------------------------------------------------------------------------------------
  * Footer
  * ------------------------------------------------------------------------------------*/
 
 footer {
-	
+}
+
+.footer-links ul {
+	list-style: none;
+}
+
+.footer-links li {
+	padding-bottom: 5px;
 }

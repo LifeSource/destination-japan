@@ -1,0 +1,33 @@
+@media screen and (max-width: 750px) {
+
+	.geisha img {
+		display: block;
+		width: 100%;
+	}
+	.about h2 {
+		display: none;
+	}
+}
+@media screen and (max-width: 600px) {
+
+	div > h2 {
+		text-align: center;
+		padding-bottom: 10px;
+		border-bottom: double #ccc;
+	}
+}
+
+@media screen and (max-width: 450px) {
+
+
+	.about > p {
+		clear: both;
+		display: block;
+	}
+
+	.about > img {
+		clear: both;
+		display: block;
+		margin: 0 auto;
+	}
+}
